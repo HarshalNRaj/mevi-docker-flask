@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Mevi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <a class="brand" href="/"><span class="brand-icon">M</span> Mevi</a>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a class="active" href="/services">Services</a>
+            <a href="/profile">Profile</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">What We Offer</p>
+            <h1>Our Services</h1>
+            <p>We provide a range of services to help you build, learn, and grow in the tech world.</p>
+        </section>
+
+        <section class="card-grid">
+            <article class="card">
+                <div class="card-icon">⌘</div>
+                <h3>Web Development</h3>
+                <p>Modern and responsive websites using the latest web technologies.</p>
+                <a class="btn btn-outline" href="/contact">Learn More →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-icon">▣</div>
+                <h3>Application Development</h3>
+                <p>Build powerful and scalable web applications for real-world needs.</p>
+                <a class="btn btn-outline" href="/contact">Learn More →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-icon">☏</div>
+                <h3>Technical Support</h3>
+                <p>Get help and guidance whenever you need it on your learning journey.</p>
+                <a class="btn btn-outline" href="/contact">Learn More →</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>© 2026 Mevi. Built with Flask <span>♥</span></footer>
+</body>
+</html>

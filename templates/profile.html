@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Mevi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <a class="brand" href="/"><span class="brand-icon">M</span> Mevi</a>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/services">Services</a>
+            <a class="active" href="/profile">Profile</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="split-layout">
+            <div class="profile-card">
+                <div class="avatar">👨🏻‍💻</div>
+                <h2>Harshal N Raj</h2>
+                <p class="highlight">Student Developer</p>
+                <p>Always learning. Always building.</p>
+
+                <div class="social-links">
+                    <a href="https://github.com/HarshalNRaj" aria-label="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+                    <a href="mailto:hello@example.com" aria-label="Email">@</a>
+                </div>
+
+                <a class="btn" href="/">← Back to Home</a>
+            </div>
+
+            <div>
+                <h2>About Me</h2>
+                <p>I'm a student developer interested in web development, Python, and modern technologies. I enjoy learning new skills and building useful projects.</p>
+
+                <div class="details-panel">
+                    <div class="detail-row"><strong>Name</strong><span>Harshal N Raj</span></div>
+                    <div class="detail-row"><strong>Role</strong><span>Student Developer</span></div>
+                    <div class="detail-row"><strong>Location</strong><span>India</span></div>
+                    <div class="detail-row"><strong>Interests</strong><span>Web Development, Python, Technology</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>© 2026 Mevi. Built with Flask <span>♥</span></footer>
+</body>
+</html>
